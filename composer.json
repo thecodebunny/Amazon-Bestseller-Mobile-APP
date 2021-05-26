@@ -1,0 +1,26 @@
+{
+    "name": "thecodebunny/pwa",
+    "description": "Progressive Web Application transforms your website to a mobile application",
+    "license": "MIT",
+    "authors": [{
+        "name": "Hemang Vyas",
+        "email": "thecodebunny@gmail.com"
+    }],
+    "require": {
+        "jenssegers/agent": "^3.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thecodebunny\\PWA\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thecodebunny\\PWA\\Providers\\PWAServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
